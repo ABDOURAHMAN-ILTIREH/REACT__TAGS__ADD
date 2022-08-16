@@ -1,0 +1,43 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: cursive;
+  text-transform: capitalize;
+}
+::-webkit-scrollbar{
+  width: 12px;
+  background-color: #f5f5f5;
+}
+::-webkit-scrollbar-thumb{
+  background-color: #54b;
+}
+
+body{
+  width: 100%;
+  height: auto;
+  background-color: #f5f5f5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

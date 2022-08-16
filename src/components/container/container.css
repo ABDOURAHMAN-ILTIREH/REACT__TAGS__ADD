@@ -1,0 +1,64 @@
+section{
+  width: 100%;
+  display: flex;
+}
+
+.tags__form{
+   margin: 20px 0;
+}
+
+ .containerTasks{
+   padding: 20px;
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   gap: 20px;
+ }
+ .TaskDisplay h3{
+   font-weight: bold;
+ }
+ .TaskDisplay h1{
+   font-weight: bold;
+   text-transform: uppercase;
+   color: #54b;
+
+ }
+ .Tasks{
+   padding: 10px 15px;
+   width: 300px;
+   border-radius: 4px;
+   box-shadow: 0 5px 10px 2px rgba(0,0,0,0.45);
+ }
+ .Tasks h3{
+   width: 100px;
+   text-align: center;
+   padding: 5px;
+   border-radius: 2px;
+   background-color: rgb(131, 131, 203);
+   font-size: 17px;
+ }
+ .Tasks p{
+   margin: 10px 0;
+ }
+ .Tasks .Icons{
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+ }
+ #BtnIcons{
+   border: none;
+   font-size: 20px;
+   color: rgb(131, 131, 203);
+   margin-top: 10px;
+   cursor: pointer;
+ }
+ 
+ #closerBtn{
+   position: absolute;
+   top: 10px;
+   right: 10px;
+   border: none;
+ }
+ #closerBtn #Facloser{
+   font-size: 20px;
+ }
+ 
