@@ -3,7 +3,10 @@ import { GlobalContext } from '../../Context/UseContext'
 import './Model.css'
 
 export const Model = () => {
-   
+  
+  const [Text, setText] = useState('')
+  const [Description, setDescription] = useState('')
+  const {AddTransactions} = useContext(GlobalContext)
   const headerRef = useRef(null)
 
   useEffect(()=>{
@@ -18,20 +21,23 @@ export const Model = () => {
 
 
 
-  const [Text, setText] = useState('')
-  const [Description, setDescription] = useState('')
-  const {AddTransactions} = useContext(GlobalContext)
 
   const Onsubmit =(e)=>{
     e.preventDefault();
+
+    setText(e.target.value = '')
+    setDescription(e.target.value = '')
+
     let NewTransaction = {
           id: Math.floor(Math.random()*10000),
           Text,
-          Description, 
+          Description
         } 
-        AddTransactions(NewTransaction)
+        AddTransactions(NewTransaction);
     }
-  return (
+    
+
+      return (
           <form ref={headerRef}>
             <h2>create new tags</h2>
             <div className="inputRow">

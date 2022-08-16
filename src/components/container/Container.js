@@ -6,11 +6,6 @@ import './container.css'
 
 function Container() {
 
-  
-
- 
-
-
   const {Transaction} = useContext(GlobalContext)
   
   return (
