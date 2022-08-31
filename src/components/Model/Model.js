@@ -39,9 +39,9 @@ export const Model = () => {
 
       return (
           <form ref={headerRef}>
-            <h2>create new tags</h2>
+            <h2>Créer De Nouvelles Balises</h2>
             <div className="inputRow">
-                <label htmlFor="title">title</label>
+                <label htmlFor="title">titre</label>
                 <input type="text" id='title' placeholder='javascript' value={Text} onChange={(e)=> {setText(e.target.value)}}/>
 
                 <label htmlFor="description">Description</label>

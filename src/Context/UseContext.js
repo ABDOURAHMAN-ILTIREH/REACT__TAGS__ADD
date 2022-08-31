@@ -3,10 +3,7 @@ import AppReducer from './AppReducer'
 
 const IntialState = {
     Transaction :[
-        {id:1, Text: 'react js', Description :'react js is one of the most famoust framwork', complete: false},
-        {id:2, Text: 'javascript', Description :'javascript is one of the most famoust programming language', complete: false},
-        {id:3, Text: 'python', Description :'pyton is one of the most easias programming language', complete: false},
-        {id:4, Text: 'c++', Description :'C++ is the mater of language', complete: false},
+        {id:3, Text: 'python', Description :'Pyton Est L’un Des Langages De Programmation Les Plus facile'},
     ]
     
 }
