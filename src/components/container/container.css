@@ -13,6 +13,22 @@ section{
    grid-template-columns: repeat(3,1fr);
    gap: 20px;
  }
+ .container__wrapper{
+   width: 100%;
+   margin: 10px 0;
+ }
+ .container__wrapper select{
+   width: 100%;
+   padding: 5px;
+   font-size: 16px;
+   color: #54b;
+   font-weight: bold;
+ }
+ .container__wrapper select option{
+   font-size: 16px;
+   color: #54b;
+ }
+
  .TaskDisplay h3{
    font-weight: bold;
  }

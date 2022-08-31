@@ -3,9 +3,9 @@ import { GlobalContext } from '../../Context/UseContext'
 import './Model.css'
 
 export const Model = () => {
-  
   const [Text, setText] = useState('')
   const [Description, setDescription] = useState('')
+
   const {AddTransactions} = useContext(GlobalContext)
   const headerRef = useRef(null)
 
@@ -31,7 +31,7 @@ export const Model = () => {
     let NewTransaction = {
           id: Math.floor(Math.random()*10000),
           Text,
-          Description
+          Description,
         } 
         AddTransactions(NewTransaction);
     }

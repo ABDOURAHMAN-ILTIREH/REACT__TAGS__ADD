@@ -1,4 +1,4 @@
-import React,{useContext,useEffect,useRef} from 'react'
+import React,{useContext} from 'react'
 import { Model } from '../Model/Model'
 import { TaskDisplay } from './TaskDisplay';
 import { GlobalContext } from '../../Context/UseContext'
@@ -8,6 +8,7 @@ function Container() {
 
   const {Transaction} = useContext(GlobalContext)
   
+  
   return (
     <section >
       <div className="tags__form">
@@ -16,8 +17,8 @@ function Container() {
         <div className='TaskDisplay'>
             <h1>tags list</h1>
             <div className="containerTasks">
-              {Transaction.slice().reverse().map((transaction)=>(
-                  <TaskDisplay key={transaction.id} {...transaction}/>
+              {Transaction.slice().reverse().map((transaction,index)=>(
+                  <TaskDisplay key={transaction.id} {...transaction} index={index}/>
                 )
               )}
             </div>
