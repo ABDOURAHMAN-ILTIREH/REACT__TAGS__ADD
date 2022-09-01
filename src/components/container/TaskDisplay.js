@@ -2,7 +2,7 @@ import React,{useContext} from 'react'
 import {FaTrash, FaUpload} from 'react-icons/fa'
 import { GlobalContext } from '../../Context/UseContext'
 
-export const TaskDisplay = ({Text, Description, id,index, complete}) => {
+export const TaskDisplay = ({Text, Description, id,index}) => {
   const {DeleteTransaction} = useContext(GlobalContext)
 
 
@@ -41,9 +41,6 @@ export const TaskDisplay = ({Text, Description, id,index, complete}) => {
           >{Text}</h3>
           <p>{Description}</p>
           <div className="Icons">
-          {/* <button id='BtnIcons'
-          style={{"color": Colors[index%5].primaryColor}}
-          ><FaUpload /></button> */}
           <button id='BtnIcons'
            style={{"color":Colors[index%5].primaryColor}}
            onClick={()=> DeleteTransaction(id)}><FaTrash /></button>
